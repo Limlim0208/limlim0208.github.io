@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>못말리는 아가씨</title>
+    </head>
+    <body>
+        <script>
+            alert("아가씨가 계신 곳의 날씨가 궁금합니다.");
+            var answer=confirm("날씨를 말해주시겠습니까?");
+            if(answer==true){
+                var choice=prompt("다음 날씨 중 어디에 가깝나요? 번호를 골라주세요.\n1:맑은날 2:바람부는날 3:비오는날 4:눈오는날");
+                switch(choice){
+                    case "1":
+                        document.write("맑은 날에는 이 집사와 함께 산책을 나가봅시다.<br>");
+                        document.write("<img src='img/1.jpg' width=500px>");
+                        break;
+                    case "2":
+                        document.write("바람이 조금 분다면 겉옷을 챙겨드리겠습니다.<br>");
+                        document.write("<img src='img/2.jpg' width=500px>");
+                        break;
+                    case "3":
+                        document.write("비오는 날에도 아가씨가 우울하지 않게 해드리겠습니다.<br>");
+                        document.write("<img src='img/3.jpg' width=500px>");
+                        break;
+                    case "4":
+                        document.write("눈이 내리는군요. 저와 눈사람을 만드시겠습니까?<br>");
+                        document.write("<img src='img/4.jpg' width=500px>");
+                        break;
+                    default:
+                        document.write("아가씨께서 심술이 나셨나 봅니다.<br> 이런 이런, 못 말리는 아가씨.<br>")
+                        document.write("<img src='img/5.jpg' width=500px>");
+                        break;
+                }
+            }
+            else{
+                document.write("안타깝군요...저는 그저 아가씨를 조금 더 알고 싶었을 뿐입니다.<br>");
+                document.write("<img src='img/6.gif' width=500px>");
+            }
+        </script>
+    </body>
+</html>
